@@ -16,17 +16,17 @@ public class Mediatheque {
 	
 	public void printCatalog() {
 		for (Item i : items)
-			i.accept(catalogVisitor);
+			System.out.println(i.accept(catalogVisitor));
 	}
 	
 	public void printOnlyBooks() {
 		for (Item i : items)
-			i.accept(booksVisitor);
+			System.out.println(i.accept(booksVisitor));
 	}
 
 	public void printOnlyCDs() {
 		for (Item i : items)
-			i.accept(cdVisitor);
+			System.out.println(i.accept(cdVisitor));
 	}
 
 }
