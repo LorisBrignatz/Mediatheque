@@ -26,6 +26,8 @@ public class Book extends Item {
 	public String toString() {
 		return "Book{" + super.toString() + ", author=" + author + '}';
 	}
-	
+	public String accept(Visitor v) {
+		return v.visit(this);
+	}
 	
 }
